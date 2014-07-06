@@ -42,6 +42,7 @@ module.exports = function(config) {
     reporters: ['progress'],
 
 
+
     // web server port
     port: 9876,
 
@@ -66,6 +67,9 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
+    singleRun: false ,
+        junitReporter : {
+            outputFile: 'test-results.xml'
+        }
   });
 };
